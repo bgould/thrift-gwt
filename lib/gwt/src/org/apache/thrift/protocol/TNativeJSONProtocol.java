@@ -42,9 +42,6 @@ public class TNativeJSONProtocol extends TJSONProtocol {
 
 	private JsArrayMixed flatJSON = (JsArrayMixed) JavaScriptObject.createArray();
 	private int flatJSONIndex = 0;
-
-	private LinkedList<JSONValueWriter> writerStack = new LinkedList<JSONValueWriter>();
-	private JSONValue base = null;
 	
 	public TNativeJSONProtocol(TTransport trans) {
 		super(trans);
